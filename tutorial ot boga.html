@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SHota tam</title>
+        <style>
+            .container {
+                max-width: 1180px;
+                /* Ca sa nu fie mai mult de 1180px shirinaua la block, ea automat se va adapta */
+                margin: 0 auto;
+                /* Pentru a alinia pe centru */
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        
+            .row {
+                width: 100%;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+        
+            /* Inline-block */
+        
+            .OneColumn {
+                /* Poate fie TwoColumn Three Four etc... ideia e ca sa se calculeze corect */
+                width: 100%;
+                display: inline-block;
+                /* Ca sa fie aliniate intr-un rand */
+        
+                /* Treb tot timpu sa fie rastoiane 15px, v itoge 15 + 15 = 30 */
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        
+            /* Treb tot timpu sa fie rastoiane 15px, v itoge 15 + 15 = 30 */
+            .TwoColumn {
+                /* va insemna ca vor merge ciite 45%, de aceea ca inline-block, are o svoistva, el are spatiu unul intre altu, pentru asta sunt alte modalitati de aliniere a blocurilor */
+                width: 45%;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: inline-block;
+                /* Ca sa fie aliniate intr-un rand */
+            }
+        
+        
+            /* FLOAT */
+        
+            .TwoFloatColumn {
+                float: left;
+                /* SI LUIA NUI POTI DADEA paddinguri, trebuie sa mai faci un block in el, si deja luia sai dai paddings ina4e poletit*/
+                width: 50%;
+                /* La FLOAT svoistva de la inline block nu este, de aia se poate rovno po matematike 50% de bagat, dar are un minus, trebuie sub containerul lui, de bagat altceva, ca din cauza lui, blocurile pot sa se duca sub dinsu */
+            }
+        
+            .clearFix {
+                clear: both;
+                /* ASTA PENTRU FLOAT, ca sa nu sa se duca sub blocuri */
+            }
+        
+            /* FLEX el e putin greu, si are tare multe proprietati, dar el e cel mai krutoi, el nu are dinstanta intre blocuri + nu e ca float, dar trebuie sa folosesti ceva ca .ROW ca sa-i dai o proprietate, za sheot cego el o sa stea zaebisi*/
+        
+            .Row {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+        
+            .TwoFlexColumn {
+                width: 50%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        </style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="TwoColumn">
+            <h3>Hello world</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown p</p>
+        </div>
+        <div class="TwoColumn">
+            <h3>Hello world</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown p</p>
+        </div>
+
+        <div class="clearFix">
+        </div>
+
+        <div class="TwoFloatColumn">
+            <h3>Hello world</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown p</p>
+        </div>
+
+        <div class="TwoFloatColumn">
+            <h3>Hello world</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown p</p>
+        </div>
+
+        <div class="clearFix">
+        </div>
+
+        <div class="Row">
+            <div class="TwoFlexColumn">
+                <h3>Hello world</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown p</p>
+            </div>
+            <div class="TwoFlexColumn">
+                <h3>Hello world</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown p</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
