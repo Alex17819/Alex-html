@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: rgb(38, 38, 54);
+        color:cornsilk
+    }
+    body>div{
+        background-color: rgb(80, 139, 141);
+        width: 400px;
+        height: 400px;
+    }
+    body>div>div{
+        width: 180px;
+        height: 180px;
+        background-color: brown;
+        margin: 10px;
+        float: left;
+    }
+    body>div>div>div{
+        background-color: coral;
+        float: left;
+        margin:5px;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+    }
+    body>div>div:first-child>div:first-child{
+        background: rgb(48, 175, 44)
+    }
+    body>div>div:last-child>div:last-child{
+        background: rgb(48, 175, 44)
+    }
+    body>div>div:first-child>div:last-child{
+        background: rgb(48, 175, 44)
+    }
+    body>div>div:last-child>div:first-child{
+        background: rgb(48, 175, 44)
+    }
+    body>div>div:nth-child(2)>div:nth-child(2){
+        background: rgb(48, 175, 44)
+    }
+    body>div>div:nth-child(2)>div:nth-child(2):hover+div:nth-child(3)                   {
+        background: rgb(48, 175, 44)
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+        </div>
+    </div>
+</body>
+</html>

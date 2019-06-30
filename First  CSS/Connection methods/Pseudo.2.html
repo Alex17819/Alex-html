@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors</title>
+
+    <style>
+        #submen{
+            opacity: 0;
+            transition: 0.3s;
+            background-color: burlywood
+        }
+        #submen:target{
+            opacity: 1;
+        }
+        ul{
+           list-style-type: none;
+           padding: 0;
+           margin:0;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(104, 46, 25);
+            display: block;
+        }
+        a:not(#settings){
+            padding: 16px
+        }
+        ul:not(#submen){
+            background-color:;
+            width: 150px;
+            text-align: right
+        }
+        #settings{
+            background-color: rgb(149, 141, 255);
+            padding: 10px;
+            display: block;
+            text-align: right
+        }
+        #punct{
+            display: block;
+            width: 5px;
+            float: right;
+            font-size: 36px;
+            line-height: 7px
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Dropdown</h1>
+    <ul>
+        <li><a href="#submen" id="settings">Settings <span id="punct"> &#183; &#183; &#183; </span></a></li>
+        <ul id="submen">
+            <li><a href="">Account</a> </li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Reports</a></li>
+        </ul>
+    </ul>
+</body>
+</html>

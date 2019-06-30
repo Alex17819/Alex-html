@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors</title>
+
+    <style>
+    body{
+        background-color: #696d7c;
+        margin: 0;
+        
+    }
+    nav{
+        background-color: rgb(153, 161, 161);
+        padding: 20px
+    }
+    form{
+        text-align: right;
+    }
+    input{
+        width: 85px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 0.5px solid #696d7c; 
+        outline: none;
+        transition: 0.5s;
+        padding: 15px 0;
+
+        
+    }
+    button{
+        outline: none;
+        border: none;
+        background: transparent
+    }
+    input:focus{
+        border-bottom-color: chartreuse;
+        color: chartreuse;
+        width: 300px;
+    }
+    button::before{
+        content: "";
+        display:block;
+        width: 15px;
+        height: 15px;
+        border: 3px solid chartreuse;
+        border-radius: 15px;
+        
+    }
+    button::after{
+        content: "";
+        display:block;
+        width: 15px;
+        height: -2px;
+        border-bottom: 3px solid chartreuse;
+        transform: rotate(45deg);
+        margin-left: 15px
+    }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <form action="">
+            <label for="">
+                <input type="text" placeholder="Type here...">
+            </label>
+            <button>
+
+                <!-- search icon prin CSS -->
+
+            </button>
+        </form>
+
+    </nav>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors</title>
+
+    <style>
+        div{
+            width: 800px;
+            height: 600px;
+            /* background-color: teal; */
+            margin: auto;
+            text-align: center
+        }
+        #slide-1:target{
+            background-image: url(https://picsum.photos/id/664/800/600)
+        }
+        #slide-2:target{
+            background-image: url(https://picsum.photos/id/666/800/600)
+        }
+        #slide-3:target{
+            background-image: url(https://picsum.photos/id/641/800/600)
+        }
+        a{
+            text-decoration: none
+        }
+    </style>
+
+</head>
+<body>
+    <div id="slide-1">
+        <div id="slide-2">
+            <div id="slide-3">
+                <nav>
+                    <a href="#slide-1">&#8857</a>
+                    <a href="#slide-2">&#8857</a>
+                    <a href="#slide-3">&#8857</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
