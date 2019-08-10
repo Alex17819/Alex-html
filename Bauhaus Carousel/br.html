@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BH carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,400i,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+
+<style>
+#bg{background:url('a');
+}
+
+#header{
+position:absolute;
+border:double 30pt;
+width:95%;
+height:15%;
+}
+
+#header img{height:120px;
+}
+
+#header img:hover{
+transform: rotate(-10deg);
+}
+
+#allies{
+border:double 30pt;
+position:relative;
+width:45%;
+top:250px;
+
+}
+
+#allies:hover ~ #bg{background:url('b');
+}
+
+#enemies{
+border:double 30pt;
+position:relative;
+width:45%;
+/*top:55px;*/
+top:-67px;
+left:967px;
+}
+
+#enemies:hover ~ #bg{background:url('c')
+}
+
+div img{
+width:120px;
+height:100px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+padding-top:10px;
+padding-bottom:5px;
+}
+</style>
+</head>
+<body id="bg">
+    <div id="header">
+        <a href="index.htm">
+            <img src="http://www.iconsdb.com/icons/preview/black/home-5-xxl.png">
+        </a>
+    </div>
+    <div id="allies">
+        <img src="http://fontmeme.com/permalink/170203/949c0c2c2c0c34c044b9b45585717a70.png">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div id="enemies">
+        <img src="http://fontmeme.com/permalink/170203/e8d4db59e876e5c94bd8f072137e33e2.png">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

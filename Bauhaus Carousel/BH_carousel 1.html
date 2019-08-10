@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BH carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,400i,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header id="carousel">
+        <div>
+            <div class="slides">
+                <div class="slide btl dark">              
+                    <h3> Lorem, ipsum.</h3>
+                    <ul class="box">
+                        <li>
+                            <a href="" id="a">
+                                <h4>Lorem, ipsum dolor. <br> <span class="not-bold">Lorem, ipsum.</span> </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" id="b">
+                                <h4>Lorem, ipsum dolor. <br> <span class="not-bold">Lorem, ipsum.</span> </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" id="c">
+                                <h4>Lorem, ipsum dolor. <br> <span class="not-bold">Lorem, ipsum.</span> </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" id="d">
+                                <h4>Lorem, ipsum dolor. <br> <span class="not-bold">Lorem, ipsum.</span> </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" id="e">
+                                <h4>Lorem, ipsum dolor. <br> <span class="not-bold">Lorem, ipsum.</span> </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" id="f">
+                                <h4>Lorem, ipsum dolor. <br> <span class="not-bold">Lorem, ipsum.</span> </h4>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="controls">
+
+
+                <ul>    
+                    <li><a href="BH_carousel.html"><i class="fas fa-chevron-up r"></i></a></li>
+                    <li><a href="BH_carousel.html"><i class="fas fa-circle"></i></a></li>
+                    <li><a class="active" href=""><i class="fas fa-circle"></i></a></li>
+                    <li><a href="BH_carousel 2.html"><i class="fas fa-circle"></i></a></li>
+                    <li><a href="BH_carousel 2.html"><i class="fas fa-chevron-down r"></i></a></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </header>
+    
+
+
+    <p><a href="http://paul-themes.com/html/bauhaus/demo/light/home-fullpage.html"></a></p>
+</body>
+
+<script>$(document).ready(function () {
+
+        //Preload
+        $('<img/>').hide().attr('src', 'https://4.bp.blogspot.com/-3YtwFdb01YI/TnCNSc1c93I/AAAAAAAAA5c/V6g_3ghlw30/s1600/Background+13.jpg').load(function () {
+            $('body').append($(this));
+        });
+
+        $('#a').hover(function () {
+            $('body').css('background-image', 'url("https://4.bp.blogspot.com/-3YtwFdb01YI/TnCNSc1c93I/AAAAAAAAA5c/V6g_3ghlw30/s1600/Background+13.jpg")');
+        }, function () {
+            $('body').css('background', '');
+        });
+    });</script>
+</html>
