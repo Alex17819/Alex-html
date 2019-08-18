@@ -1,0 +1,250 @@
+@mixin button {
+    .myButton {
+            background-color: rgb(249,180,39);
+            border-radius: 28px;
+            border: 1px solid rgb(249,180,39);
+            display: inline-block;
+            color: rgb(41, 31, 9);
+            font-size: 14px;
+            padding: 12px 20px;
+            text-decoration: none;
+            vertical-align: baseline;
+            position: relative;
+            font-weight: 500 !important;
+            letter-spacing: .2em !important;
+            transition: all 0.5s ease;
+
+            &:hover{
+                box-shadow: 0 0 15px -8px rgb(249,180,39);
+                }      
+            } 
+}
+@mixin center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+@media (max-width: 950px){
+        #navbar ul:not(:first-child){
+            display: none;
+        }
+        main .container_1{
+            //  height: 100px;
+            position: relative;
+        }
+        main .container_1 .row{
+            position: absolute;
+            
+            flex-wrap: wrap;
+        }
+         main .container_1 .row .col{
+             width: 100%;
+             
+         }
+}
+@media screen and (max-width: 1000px) {
+  .topnav ul:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+body{
+    background-color: rgb(21,20,24);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    padding: 0;
+    width: 100vw;
+    
+}
+header{
+    width: 100%;
+
+    #navbar{
+        background-color: #0e0f18b7;
+        width: inherit;
+        height: 70px;
+        display: flex;
+        font-weight: 400;
+        -webkit-transition-: 0.5s all ease;
+        align-items: center;
+        flex-direction: row;
+        font-size: 17px;
+        position: fixed;
+        z-index: 9999;
+
+        a{
+        text-decoration: none;
+        color: rgb(173,172,174);
+        letter-spacing: 1px;
+
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
+        
+        
+        }
+        #logo{
+            display: flex;
+            margin-left: 250px;
+        }
+        #main_menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-grow: 2;
+            margin-right: 30px;
+            .icon{
+            display: none;
+        }
+            li{
+                margin-left: 30px;
+            }
+        }
+        ul:last-child{
+            display: flex;
+            flex-grow: 1;
+            
+        @include button
+        }
+
+    }
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+    h1{
+        font-weight: 700;
+        font-size: 2.8em;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+    .container_1{
+        flex-direction: row;
+        margin-top: 70px;
+        width: 100vw;
+        height: 900px ;
+        background-image: url(imgs/fon-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content:center;
+        align-items: center;
+        position: relative;
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+            width: 90%;
+            margin: auto;
+            position: relative;
+            top: 12%;
+            .col{
+                flex-direction: column;
+                vertical-align: middle;
+                text-align: center;
+                width: 300px;
+                [class^="fa"]{
+                    font-size: 50px;
+                }
+                h2{
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                p{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .container_2{
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(21,20,24);
+        position: relative;
+        @include button;
+        .myButton {
+            position: absolute;
+            top:65%;
+            left: 250px;
+        }
+
+        p{
+            position: absolute;
+            display: block;
+            width: 500px;
+            height: 200px;
+            color: rgb(122,121,128);
+            top: 0;
+            left: 250px;
+            bottom: 0;
+            right: calc(100vw- 250px);
+            margin: auto;
+        }
+        img{
+            position: absolute;
+            left: 830px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    }
+    .container_3{
+        flex-direction: row;
+        
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(248,248,249);
+        position: relative;
+
+        img{
+            position: absolute;
+            top: 50px;
+            left:50px;
+            bottom: 0;
+            margin: auto;
+        }
+        p{
+            display: inline-block;
+            width: 500px;
+            height: 200px;
+            text-align:right;
+            position: absolute;
+            left: 55%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 25px;
+            line-height: 1.2;
+        }
+        h1{
+            color: rgb(21,20,24) !important
+        }
+    }
+}

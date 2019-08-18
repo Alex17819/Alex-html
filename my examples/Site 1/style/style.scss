@@ -1,0 +1,133 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+// nav
+#navbar{
+    // background-color: #1f2135;
+    width: 100vw;
+    height: 60px;
+    padding-top:15px;
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    font-weight: 400;
+    -webkit-transition-: 0.5s all ease;
+    justify-content:center;
+
+    li{
+        float: left;
+        display: block;
+        padding: 15px 20px; 
+    }
+    #logo li a{
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-size: 18;
+        color: #333347 !important;
+        margin-left: 200px;  
+    }
+    #logo li::after{
+        content:'|';
+        font-weight: 300;
+        position: relative;
+        left: 20px;
+        color: gray;
+        margin-right: 50px
+    }
+    ul:last-child{
+        float: right;
+        margin-right: 10%;
+    }
+    ul:last-child li::before{
+        content:'|';
+        font-weight: 300;
+        position: relative;
+        left: -30px;
+        color: gray;
+        top: -16px;
+        font-size: 25px;
+        
+    }    
+    .myButton {
+        background-color:#1e266d;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:1px solid #1e266d;
+        display:inline-block;
+        color:#ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-size:15px;
+        padding:16px 30px;
+        text-decoration:none;
+        vertical-align: baseline;
+        position: relative;
+        top:-16px;
+        font-weight: 600;  
+        letter-spacing: 1px;
+    }
+    .myButton:hover {
+         color:#1fb2d0;
+    }
+    }
+    
+
+// 
+
+// first_container
+main .container_1{
+    width:100vw ;
+
+    h1{
+        position: absolute;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.4em;
+        margin-left: 220px;
+        margin-top: 110px;
+        color: #373a3c;
+    }
+    p{
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 240px;
+    }
+        .myButton {
+        background-color:#1e266d;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:1px solid #1e266d;
+        display:inline-block;
+        color:#ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-size:15px;
+        padding:16px 30px;
+        text-decoration:none;
+        vertical-align: baseline;
+        position: relative;
+        font-weight: 600;  
+        margin-left: 220px;
+        margin-top: 300px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .myButton:hover {
+         color:#1fb2d0;
+    }
+    img{
+        
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover ;
+        width: 100vw;
+        height: 600px;
+
+    }
+}

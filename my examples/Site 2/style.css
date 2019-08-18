@@ -1,0 +1,328 @@
+@media (max-width: 950px) {
+  #navbar ul:not(:first-child) {
+    display: none;
+  }
+  main .container_1 {
+    position: relative;
+  }
+  main .container_1 .row {
+    position: absolute;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .container_1 .row .col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav ul:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  background-color: #151418;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-top: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+}
+
+header #navbar {
+  background-color: #0e0f18b7;
+  width: inherit;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  -webkit-transition-: 0.5s all ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 17px;
+  position: fixed;
+  z-index: 9999;
+}
+
+header #navbar a {
+  text-decoration: none;
+  color: #adacae;
+  letter-spacing: 1px;
+}
+
+header #navbar a:hover {
+  color: white;
+}
+
+header #navbar #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 250px;
+}
+
+header #navbar #main_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  margin-right: 30px;
+}
+
+header #navbar #main_menu .icon {
+  display: none;
+}
+
+header #navbar #main_menu li {
+  margin-left: 30px;
+}
+
+header #navbar ul:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header #navbar ul:last-child .myButton {
+  background-color: #f9b427;
+  border-radius: 28px;
+  border: 1px solid #f9b427;
+  display: inline-block;
+  color: #291f09;
+  font-size: 14px;
+  padding: 12px 20px;
+  text-decoration: none;
+  vertical-align: baseline;
+  position: relative;
+  font-weight: 500 !important;
+  letter-spacing: .2em !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header #navbar ul:last-child .myButton:hover {
+  -webkit-box-shadow: 0 0 15px -8px #f9b427;
+          box-shadow: 0 0 15px -8px #f9b427;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 2.8em;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+main .container_1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 70px;
+  width: 100vw;
+  height: 900px;
+  background-image: url(imgs/fon-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main .container_1 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 12%;
+}
+
+main .container_1 .row .col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  width: 300px;
+}
+
+main .container_1 .row .col [class^="fa"] {
+  font-size: 50px;
+}
+
+main .container_1 .row .col h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+main .container_1 .row .col p {
+  margin-top: 20px;
+}
+
+main .container_2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-color: #151418;
+  position: relative;
+}
+
+main .container_2 .myButton {
+  background-color: #f9b427;
+  border-radius: 28px;
+  border: 1px solid #f9b427;
+  display: inline-block;
+  color: #291f09;
+  font-size: 14px;
+  padding: 12px 20px;
+  text-decoration: none;
+  vertical-align: baseline;
+  position: relative;
+  font-weight: 500 !important;
+  letter-spacing: .2em !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main .container_2 .myButton:hover {
+  -webkit-box-shadow: 0 0 15px -8px #f9b427;
+          box-shadow: 0 0 15px -8px #f9b427;
+}
+
+main .container_2 .myButton {
+  position: absolute;
+  top: 65%;
+  left: 250px;
+}
+
+main .container_2 p {
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 200px;
+  color: #7a7980;
+  top: 0;
+  left: 250px;
+  bottom: 0;
+  right: calc(100vw- 250px);
+  margin: auto;
+}
+
+main .container_2 img {
+  position: absolute;
+  left: 830px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+main .container_3 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f8f9;
+  position: relative;
+}
+
+main .container_3 img {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  bottom: 0;
+  margin: auto;
+}
+
+main .container_3 p {
+  display: inline-block;
+  width: 500px;
+  height: 200px;
+  text-align: right;
+  position: absolute;
+  left: 55%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+main .container_3 h1 {
+  color: #151418 !important;
+}
+/*# sourceMappingURL=style.css.map */
